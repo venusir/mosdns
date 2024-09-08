@@ -264,7 +264,8 @@ cp $RULES_DIR/*.txt $MOSDNS_GEO_SET_DIR/ -Rf
 
 # 重启mosdns
 echo "[NOTICE] restart mosdns..." >>$LOG_FILE
-docker restart mosdns
+# docker restart mosdns
+systemctl restart mosdns
 
 # if [ $geoip_need_update == 1 ] || [ $geosite_need_update == 1 ]; then
 #     # geoip or geosite 导出文件需要更新
