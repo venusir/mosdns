@@ -29,6 +29,10 @@ systemctl enable mosdns.service
 # 检查状态
 systemctl status mosdns.service
 
+# 卸载
+# mosdns service stop
+# mosdns service uninstall
+
 
 # 安装 adguardhome 的代码
 
