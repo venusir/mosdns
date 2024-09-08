@@ -21,13 +21,13 @@ chmod +x /usr/bin/mosdns
 mosdns service install -d /usr/bin -c config.yaml
 
 # 启动mosdns
-systemctl start mosdns
+mosdns service start
 
 # 设置开机自启
-systemctl enable mosdns
+systemctl enable mosdns.service
 
 # 检查状态
-systemctl status mosdns
+systemctl status mosdns.service
 
 
 # 安装 adguardhome 的代码
