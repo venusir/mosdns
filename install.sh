@@ -14,6 +14,9 @@ unzip -o -d tmp tmp/mosdns-linux-amd64.zip
 # 把mosdns软件移到绝对工作目录
 mv tmp/mosdns /usr/bin/
 
+# 将配置文件移动到 /etc/mosdns
+cp *.yaml /etc/mosdns
+
 # 获取执行权限
 chmod +x /usr/bin/mosdns
 
