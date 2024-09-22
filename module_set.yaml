@@ -7,12 +7,12 @@ plugins:
     type: domain_set
     args:
       files:
-        - "/etc/mosdns/others_set/domain_dual_stlack_custom.txt"
-        - "/etc/mosdns/others_set/domain_dual_stlack_resourse.txt"
-        - "/etc/mosdns/others_set/domain_dual_stlack_network.txt"
-        - "/etc/mosdns/others_set/domain_dual_stlack_bt.txt"
-        - "/etc/mosdns/others_set/domain_dual_stlack_stun.txt"
-        - "/etc/mosdns/others_set/domain_dual_stlack_game.txt"
+        #- "/etc/mosdns/others_set/domain_dual_stlack_custom.txt"
+        #- "/etc/mosdns/others_set/domain_dual_stlack_resourse.txt"
+        #- "/etc/mosdns/others_set/domain_dual_stlack_network.txt"
+        #- "/etc/mosdns/others_set/domain_dual_stlack_bt.txt"
+        #- "/etc/mosdns/others_set/domain_dual_stlack_stun.txt"
+        #- "/etc/mosdns/others_set/domain_dual_stlack_game.txt"
         - "/etc/mosdns/geo_set/geosite_category-public-tracker.txt"
         - "/etc/mosdns/geo_set/geosite_xbox.txt"
         - "/etc/mosdns/geo_set/geosite_cloudflare.txt"
