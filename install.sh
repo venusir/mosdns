@@ -2,6 +2,9 @@
 
 # 安装 mosdns
 
+# 创建配置文件目录
+mkdir -p /etc/mosdns
+
 # 创建临时文件夹
 mkdir tmp
 
