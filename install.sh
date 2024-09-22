@@ -21,7 +21,7 @@ cp *.yaml /etc/mosdns
 chmod +x /usr/bin/mosdns
 
 # mosdns service install -d 工作目录绝对路径 -c 配置文件路径
-mosdns service install -d /usr/bin -c config.yaml
+mosdns service install -d /usr/bin -c /etc/mosdns/config.yaml
 
 # 启动mosdns
 mosdns service start
