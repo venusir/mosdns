@@ -7,49 +7,49 @@ plugins:
     type: domain_set
     args:
       files:
-        - "./others_set/domain_dual_stlack_custom.txt"
-        - "./others_set/domain_dual_stlack_resourse.txt"
-        - "./others_set/domain_dual_stlack_network.txt"
-        - "./others_set/domain_dual_stlack_bt.txt"
-        - "./others_set/domain_dual_stlack_stun.txt"
-        - "./others_set/domain_dual_stlack_game.txt"
-        - "./geo_set/geosite_category-public-tracker.txt"
-        - "./geo_set/geosite_xbox.txt"
-        - "./geo_set/geosite_cloudflare.txt"
-        - "./geo_set/geosite_googlefcm.txt"
+        - "/etc/mosdns/others_set/domain_dual_stlack_custom.txt"
+        - "/etc/mosdns/others_set/domain_dual_stlack_resourse.txt"
+        - "/etc/mosdns/others_set/domain_dual_stlack_network.txt"
+        - "/etc/mosdns/others_set/domain_dual_stlack_bt.txt"
+        - "/etc/mosdns/others_set/domain_dual_stlack_stun.txt"
+        - "/etc/mosdns/others_set/domain_dual_stlack_game.txt"
+        - "/etc/mosdns/geo_set/geosite_category-public-tracker.txt"
+        - "/etc/mosdns/geo_set/geosite_xbox.txt"
+        - "/etc/mosdns/geo_set/geosite_cloudflare.txt"
+        - "/etc/mosdns/geo_set/geosite_googlefcm.txt"
 
   # prefer_ipv4/6域名，代理，remote+gobal
   - tag: domain_prefer_proxy
     type: domain_set
     args:
       files:
-        - "./others_set/domain_prefer_proxy.txt"
+        - "/etc/mosdns/others_set/domain_prefer_proxy.txt"
 
   # prefer_ipv4/6域名，direct
   - tag: domain_prefer_direct
     type: domain_set
     args:
       files:
-        - "./others_set/domain_prefer_direct.txt"
-        - "./geo_set/geosite_apple-cn.txt"
-        # - "./geo_set/geosite_google-cn.txt"
-        - "./geo_set/geosite_win-update.txt"
-        - "./geo_set/geosite_category-games@cn.txt"
+        - "/etc/mosdns/others_set/domain_prefer_direct.txt"
+        - "/etc/mosdns/geo_set/geosite_apple-cn.txt"
+        # - "/etc/mosdns/geo_set/geosite_google-cn.txt"
+        - "/etc/mosdns/geo_set/geosite_win-update.txt"
+        - "/etc/mosdns/geo_set/geosite_category-games@cn.txt"
 
   # prefer_ipv4/6域名，gfw，remote+gobal
   - tag: domain_prefer_gfw
     type: domain_set
     args:
       files:
-        - "./geo_set/geosite_gfw.txt"
+        - "/etc/mosdns/geo_set/geosite_gfw.txt"
 
   # prefer_ipv4/6域名，cn
   - tag: domain_prefer_cn
     type: domain_set
     args:
       files:
-        - "./geo_set/geosite_tld-cn.txt"
-        - "./geo_set/geosite_china-list.txt"
+        - "/etc/mosdns/geo_set/geosite_tld-cn.txt"
+        - "/etc/mosdns/geo_set/geosite_china-list.txt"
 
   # -------------------------------------------------------------------
   # IP集
@@ -58,28 +58,28 @@ plugins:
     type: ip_set
     args:
       files:
-        - "./geo_set/geoip_cn.txt"
+        - "/etc/mosdns/geo_set/geoip_cn.txt"
 
   # cloudflare ip
   - tag: ip_cloudflare
     type: ip_set
     args:
       files:
-        - "./geo_set/geoip_cloudflare.txt"
+        - "/etc/mosdns/geo_set/geoip_cloudflare.txt"
 
   # fastly ip
   - tag: ip_fastly
     type: ip_set
     args:
       files:
-        - "./geo_set/geoip_fastly.txt"
+        - "/etc/mosdns/geo_set/geoip_fastly.txt"
 
   # cloudfront ip
   - tag: ip_cloudfront
     type: ip_set
     args:
       files:
-        - "./geo_set/geoip_cloudfront.txt"
+        - "/etc/mosdns/geo_set/geoip_cloudfront.txt"
 
   # -------------------------------------------------------------------
   # 特定集
@@ -88,33 +88,33 @@ plugins:
     type: domain_set
     args:
       files:
-        - "./geo_set/geosite_private.txt"
+        - "/etc/mosdns/geo_set/geosite_private.txt"
 
   # private ip
   - tag: ip_private
     type: ip_set
     args:
       files:
-        - "./geo_set/geoip_private.txt"
+        - "/etc/mosdns/geo_set/geoip_private.txt"
 
   # 反向解析
   - tag: local_ptr
     type: domain_set
     args:
       files:
-        - "./others_set/local-ptr.txt"
+        - "/etc/mosdns/others_set/local-ptr.txt"
 
   # 域名查询重定向结果
   - tag: redirect
     type: redirect
     args:
       files:
-        - "./others_set/redirect.txt"
+        - "/etc/mosdns/others_set/redirect.txt"
 
   # 自定义 Hosts 重写
   - tag: hosts
     type: hosts
     args:
       files:
-        - "./others_set/hosts.txt"
+        - "/etc/mosdns/others_set/hosts.txt"
   # -------------------------------------------------------------------

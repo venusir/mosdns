@@ -2,7 +2,7 @@ log:
   # 日志级别。可选 "debug" "info" "warn" "error"。默认 "info"。
   level: "error"
   production: true # 纯 json 输出。
-  file: "./mosdns.log"
+  file: "/etc/mosdns/mosdns.log"
 
 # API 入口设置
 api:
@@ -13,14 +13,14 @@ api:
 # 配置文件会依次加载，部分文件调用上一文件中的插件，
 # 如无必要，请勿调整加载顺序。
 include:
-  - "./module_set.yaml"
-  - "./module_ecs.yaml"
-  - "./module_dns.yaml"
-  - "./module_ttl.yaml"
-  - "./module_cdn.yaml"
-  - "./module_resp_checker.yaml"
-  - "./module_forward.yaml"
-  - "./module_query.yaml"
+  - "/etc/mosdns/module_set.yaml"
+  - "/etc/mosdns/module_ecs.yaml"
+  - "/etc/mosdns/module_dns.yaml"
+  - "/etc/mosdns/module_ttl.yaml"
+  - "/etc/mosdns/module_cdn.yaml"
+  - "/etc/mosdns/module_resp_checker.yaml"
+  - "/etc/mosdns/module_forward.yaml"
+  - "/etc/mosdns/module_query.yaml"
 
 plugins:
   # 缓存
@@ -35,7 +35,7 @@ plugins:
   #     lazy_cache_ttl: 86400
   #     # lazy cache 生存时间。单位: 秒。默认: 0 (禁用 lazy cache)。
   #     # 建议值 86400（1天）~ 259200（3天）
-  #     dump_file: "./cache.dump"
+  #     dump_file: "/etc/mosdns/cache.dump"
   #     # (实验性) 自动保存间隔。单位秒。默认 600。
   #     # 如果距离上次 dump 有 1024 次更新，则自动保存。
   #     dump_interval: 3600

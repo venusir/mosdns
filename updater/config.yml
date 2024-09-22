@@ -1,7 +1,7 @@
 log_file: "./updater.log"
 rules_dir: "./rules"
 download_dir: "./download"
-mosdns_geo_set_dir: "../geo_set"
+mosdns_geo_set_dir: "/etc/mosdns/geo_set"
 geoip_tags_url: "./tags/geoip_tags.txt"
 geosite_tags_url: "./tags/geosite_tags.txt"
 geoip_name: "geoip.dat"
